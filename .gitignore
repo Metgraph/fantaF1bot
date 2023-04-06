@@ -1,3 +1,8 @@
 *.pem
 *.db
+<<<<<<< HEAD
 data.txt
+=======
+*.mod
+*.sum
+>>>>>>> 96f7513bd0f51d898ea8a9767703a155cf63bb9c
