@@ -12,6 +12,8 @@ import (
 	"github.com/mattn/go-sqlite3"
 )
 
+// PORCO DIO
+
 type sqlDB struct {
 	db *sql.DB
 }
