@@ -3,12 +3,20 @@ package main
 import (
 	"fmt"
 	"log"
+	"os"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 func bot() {
-	bot, err := tgbotapi.NewBotAPI("TOKEN")
+	dat, err := os.ReadFile("data.txt")
+	if err != nil {
+		log.Panic(err)
+	}
+
+	token := string(dat)
+
+	bot, err := tgbotapi.NewBotAPI(token)
 	if err != nil {
 		log.Panic(err)
 	}
